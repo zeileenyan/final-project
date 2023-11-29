@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Pittsburgh</title>
+</head>
+<body>
+    <a class = "skip" href="#skip">Skip to Main Content</a>
+    <header>
+        <nav>
+            <div class="nav_container">
+                <ul class="nav_links">
+                    <li class="nav_item"><a href="about.html">About</a></li>
+                    <li id="currrent" class="nav_item"><a href="boston.html">Boston</a></li>
+                    <li class="nav_item"><a href="pittsburgh.html">Pittsburgh</a></li>
+                    <li class="nav_item"><a href="annArbor.html">Ann Arbor</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>Pittsburgh</h1>
+        <div id="thoughts">
+            <h2>May 30th - August 11th</h2>
+            <p>I moved to Pittsburgh for a summer internship. The city has been one of my favorite places that I've lived in so far! Before arriving in Pittsburgh, I had no idea what to expect. Needless to say, my expectations were vastly exceeded by the quality asian food and beautiful sights. My favorite part of each day was driving to work because I got to see the beautiful bridges while crossing the Monongahela River. It's definitely a city full of quirky charm and good food.</p>
+        </div>
+
+        <div>
+            <p>Click on an image below to expand it:</p>
+          </div>
+
+        <div class="photo_gallery">
+            <div class="gallery_img">
+                <img src="images/pirates_stadium.HEIC.sb-7a341bf7-bWmTwh" alt="Catching a pirates game at the PNC Park baseball stadium." onclick="myFunction(this);">
+            </div>
+            <div class="gallery_img">
+                <img src="images/team_pirates.jpg" alt="Taking a selfie at the Pirates game." onclick="myFunction(this);">
+            </div>
+            <div class="gallery_img">
+                <img src="images/pittsburgh_PNC_orientation.HEIC" alt="Standing in front of PNC wallpaper on intern orientation day." onclick="myFunction(this);">
+            </div>
+            <div class="gallery_img">
+                <img src="images/pitt_PNC_capstone.HEIC" alt="Taking an intern selfie during our final presentation day." onclick="myFunction(this);">
+            </div>
+          </div>
+          
+          <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg">
+            <div id="imgtext"></div>
+          </div>
+
+        
+        <hr>
+        <h1>Activities</h1>
+        <div id="activities">
+            <div id ="activity">
+                <a href="https://www.conalmapgh.com/"target="_blank"><img id="pitt-conalma" src="images/con_alma.JPG" alt="jazz club lobby">
+                <div id="description"><b>Con Alma,</b> a local jazz club with food, drinks, and live music.</div></a>
+            </div>
+            <div id ="activity">
+                <a href="https://monongahelaincline.com/" target="_blank"><img id="pitt_monon" src="images/pitt_monon.jpeg" alt="monongahela incline trolly traveling along a track in pittsburgh">
+                <div id="description"><b>The Monongahela Incline,</b> a trolley carriage that transports passengers over Mount Washington.</div></a>
+            </div>
+            <div id ="activity">
+                <a href="https://www.visitpittsburgh.com/neighborhoods/strip-district/" target="_blank"><img id="pitt_strip" src="images/pitt_strip.jpeg" alt="a street full of busy shops in pittsburgh">
+                <div id="description"><b>The Strip District,</b> a popular area near downtown Pittsburgh with many shops and restaurants.</div></a>
+            </div>
+            <div id ="activity">
+                <a href="https://www.mlb.com/pirates/ballpark" target="_blank"><img id="pitt_pnc_park" src="images/pitt_pnc_park.jpeg" alt="ariel view of a baseball stadium (PNC Park, pittsburgh)">
+                <div id="description"><b>PNC Park,</b> Pittsburgh's baseball stadium that hosts Pirates games.</div></a>
+            </div>
+
+            <div id ="activity">
+                <a href="https://www.phipps.conservatory.org/" target="_blank"><img id="pitt_phipps" src="images/phipps.JPG" alt="plants along a pathway">
+                <div id="description"><b>Phipps Conservatory,</b> a plant conservatory that partners with Carnegie Mellon University.</div></a>
+            </div>
+            <div id ="activity">
+                <a href="https://carnegieart.org/"target="_blank"><img id="pitt-moa" src="images/carnegiemoa.jpeg" alt="interior of an art museum">
+                <div id="description"><b>Carnegie Museum of Art,</b> an art museum in the Oakland neighborhood of Pittsburgh.</div></a>
+            </div>
+        </div>
+        <hr>
+        <h1>Favorite Restaurants</h1>
+        <div id="restaurants">
+            <div id="restaurant">
+                <h2>No. 1 Sushi Sushi</h2>
+                <p>4.4/5 Stars</p>
+                <a href="https://www.yelp.com/biz/no-1-sushi-sushi-pittsburgh" target="_blank">See Reviews</a>
+                <a href="https://www.no1sushisushi.com/" target="_blank"> View Menu</a>
+            </div>
+            <div id="restaurant">
+                <h2>Ineffable Cà Phê</h2>
+                <p>4.4/5 Stars</p>
+                <a href="https://www.yelp.com/biz/ineffable-ca-phe-pittsburgh" target="_blank">See Reviews</a>
+                <a href="https://order.toasttab.com/online/ineffable-ca-phe" target="_blank">View Menu</a>
+            </div>
+            <div id="restaurant">
+                <h2>Amazing Dumplings</h2>
+                <p>4.3/5 Stars</p>
+                <a href="https://www.yelp.com/biz/amazing-dumplings-pittsburgh?osq=amazing+dumplings" target="_blank">See Reviews</a>
+                <a href="https://amazingdumplings.com/menu/index.htm" target="_blank">View Menu</a>
+            </div>
+            <div id="restaurant">
+                <h2>Everyday Noodles</h2>
+                <p>4.2/5 Stars</p>
+                <a href="https://www.yelp.com/biz/everyday-noodles-pittsburgh" target="_blank">See Reviews</a>
+                <a href="https://m.everydaynoodles.net/menu.html" target="_blank">View Menu</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="about.html">About •  </a>
+        <a href="boston.html">Boston • </a>
+        <a href="pittsburgh.html">Pittsburgh • </a>
+        <a href="annArbor.html">Ann Arbor</a>
+        <p>Copyright © Eileen Yan 2023</p>
+    </footer>
+
+<script src="js/gallery.js"></script>
+</body>
+</html>

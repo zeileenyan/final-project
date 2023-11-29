@@ -1,0 +1,461 @@
+.skip {
+    position: absolute;
+    left: -1000px; /*make it off of screen to the left */
+}
+
+.skip:focus {
+    left: 2%; /*change position when in focus (tabbed) view*/
+}
+
+
+* {
+    background-color: rgb(248, 239, 225);
+    text-decoration: none;
+    font-family: "Marcellus", sans-serif;
+}
+
+
+.nav_links {
+    list-style: none;
+    margin: 25px 0px;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+body {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* add flex to navigation in column format */ 
+.nav_container {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+.nav_item:hover {
+    text-decoration: line-through;
+    text-decoration-color: rgb(172, 62, 165);
+
+}
+
+a {
+    color: rgb(172, 62, 165);
+    font-weight:bolder;
+
+}
+
+#current a {
+    color: black;
+}
+
+h1 {
+    font-size: 28px;
+    color: rgb(84, 79, 79);
+    font-weight: bolder;
+    margin: 25px 0px;
+}
+
+h2 {
+    font-size: 24px;
+    color: rgb(84, 79, 79);
+    font-weight: bolder;
+    margin: 25px 0px;
+}
+
+p {
+    font-size: 18px;
+    color: rgb(84, 79, 79);
+}
+
+hr {
+    height: 1.5px;
+    border-width: 0;
+    color: rgb(176, 172, 172);
+    background-color: rgb(179, 168, 144);
+    margin: 75px auto;
+}
+
+.about-img:hover {
+    filter: none;
+}
+
+.about img {
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: 50px auto;
+    filter: drop-shadow(4px 4px 10px rgb(122, 121, 122));
+}
+
+.about p {
+    margin: auto;
+}
+
+img{
+    width: 300px;
+    max-height: 300px;
+    border-radius: 15px;
+}
+
+
+#cities img:hover{
+    opacity: 1;
+}
+
+
+
+#city {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 70px auto;
+    background-color: white;
+    border-radius: 15px;
+    width: 300px;
+}
+
+#city:hover {
+    filter: drop-shadow(4px 4px 10px rgb(122, 121, 122));
+}
+
+#city h2, #city a {
+    background-color: white;
+    border-radius: 15px;
+}
+
+#city img {
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    max-height: 200px;
+}
+
+
+footer {
+    text-align: center;
+    margin: 50px auto;
+}
+
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* city pages specific styling */ 
+#activities img {
+    border: none;
+    border-radius: 8px 8px 0px 0px;
+    max-width: 300px;
+    max-height: 175px;
+    filter: none;
+}
+
+#activity a {
+    background-color: white;
+    border-radius: 8px;
+    color: rgb(84, 79, 79);
+}
+
+#activities {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 25px auto;
+}
+
+#activity {
+    margin: 25px auto;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 8px;
+    filter: drop-shadow(4px 4px 10px rgb(220, 219, 220));
+    opacity: 0.9;
+}
+
+#activity a b{
+    font-weight: bolder;
+    background-color: white;
+}
+
+#activity #description {
+    margin: 15px 25px;
+    background-color: white;
+}
+
+#activity:hover {
+    filter: drop-shadow(4px 4px 10px rgb(122, 121, 122));
+    opacity: 1;
+}
+
+#restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px 25px;
+    justify-content: center;
+}
+
+#restaurant {
+    display: flex;
+    border-radius: 4px;
+    flex-direction: column;
+    margin: 25px 25px;
+    padding: 25px 50px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 252, 252);
+    filter: drop-shadow(4px 4px 10px rgb(220, 219, 220));
+}
+
+#restaurant:hover {
+    filter: drop-shadow(4px 4px 10px rgb(122, 121, 122));
+}
+
+#restaurant p, #restaurant h2, #restaurant a {
+    background-color: rgb(255, 252, 252);
+}
+
+#restaurant p {
+    font-size: 20px;
+}
+
+#restaurant h2 {
+    margin: 0px;
+}
+
+#restaurant a:hover {
+    text-decoration: underline;
+}
+
+/* photo gallery styling */ 
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .gallery_img {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  .gallery_img img {
+    opacity: 0.9; 
+    cursor: pointer; 
+    width: 100%
+  }
+  
+  .gallery_img img:hover {
+    opacity: 1;
+  }
+  
+.photo_gallery {
+    margin: auto auto;
+}
+
+  /* Clear floats after the columns */
+.photo_gallery:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .container {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: rgb(84, 79, 79);
+    font-size: 16px;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 4px;
+    margin: 10px;
+    margin-right: 25px;
+  }
+
+
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: rgb(84, 79, 79);
+    font-size: 35px;
+    cursor: pointer;
+    background-color: white;
+    padding: 0px 10px;
+    border-radius: 100%;
+  }
+  
+  .closebtn:hover {
+    color: white;
+    background-color: rgb(84, 79, 79);
+  }
+
+
+@media screen and (min-width:700px) {
+    /* add flex to header in column format */ 
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 25px;
+    }
+
+    .nav_links {
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav_item {
+        margin: 25px;
+    }
+    
+    body {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin: 25px 50px
+    }
+
+    .about{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    p{
+        font-size: 22px;
+        padding: 0px 50px;
+    }
+    
+    img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .about img{
+        height: 250px;
+        width: 250px;
+        margin-right: 50px;
+    }
+
+
+    #cities {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0px 10px;
+    }
+
+    #city {
+        width: 250px;
+    }
+    /* styling for city pages */ 
+
+    h2 {
+        margin: 25px 50px;
+    }
+
+    #restaurant {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #activity img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #activities {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #activity {
+        max-width: 250px;
+        margin: 50px 10px;
+    }
+
+    .photo_gallery {
+        margin: auto 40px;
+    }
+
+    .closebtn {
+        top: 15px;
+        right: 75px;
+    }
+
+    #imgtext {
+        font-size: 20px;
+        left: 75px;
+        max-width: 800px;
+    }
+
+    #expandedImg {
+        margin: auto 50px;
+        width: 90%;
+    }
+}
+
+
+
+@media screen and (min-width:1200px) {
+    /* add flex to header in column format */ 
+    header {
+        flex-direction: row-reverse;
+    }
+
+    .nav_links {
+        font-size: 24px;
+    }
+
+    .nav_item {
+        margin: 25px;
+    }
+    
+    body {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    #cities {
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+
