@@ -209,7 +209,7 @@ footer p {
     background-color: white;
 }
 
-.activity #description {
+.activity .description {
     margin: 15px 25px;
     background-color: white;
 }
@@ -428,7 +428,8 @@ footer p {
     }
 
     .restaurant a {
-        padding: auto 25px;
+        padding-right: 25px;
+        padding-left: 25px;
     }
 
     .activity img {
