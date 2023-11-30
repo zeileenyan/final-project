@@ -126,13 +126,13 @@ img{
 }
 
 
-#cities img:hover{
+.cities img:hover{
     opacity: 1;
 }
 
 
 
-#city {
+.city {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -142,16 +142,16 @@ img{
     width: 300px;
 }
 
-#city:hover {
+.city:hover {
     filter: drop-shadow(4px 4px 10px rgb(122, 121, 122));
 }
 
-#city h2, #city a {
+.city h2, .city a {
     background-color: white;
     border-radius: 15px;
 }
 
-#city img {
+.city img {
     margin-left: auto;
     margin-right: auto;
     opacity: 0.9;
@@ -173,7 +173,7 @@ footer p {
 
 
 /* city pages specific styling */ 
-#activities img {
+.activities img {
     border: none;
     border-radius: 8px 8px 0px 0px;
     max-width: 300px;
@@ -181,20 +181,20 @@ footer p {
     filter: none;
 }
 
-#activity a {
+.activity a {
     background-color: white;
     border-radius: 8px;
     color: rgb(84, 79, 79);
 }
 
-#activities {
+.activities {
     display: flex;
     text-align: center;
     flex-direction: column;
     margin: 25px auto;
 }
 
-#activity {
+.activity {
     margin: 25px auto;
     width: 300px;
     height: 300px;
@@ -204,22 +204,22 @@ footer p {
     opacity: 0.9;
 }
 
-#activity a b{
+.activity a b{
     font-weight: bolder;
     background-color: white;
 }
 
-#activity #description {
+.activity #description {
     margin: 15px 25px;
     background-color: white;
 }
 
-#activity:hover {
+.activity:hover {
     filter: drop-shadow(4px 4px 10px rgb(122, 121, 122));
     opacity: 1;
 }
 
-#restaurants {
+.restaurants {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -227,7 +227,7 @@ footer p {
     justify-content: center;
 }
 
-#restaurant {
+.restaurant {
     display: flex;
     border-radius: 4px;
     flex-direction: column;
@@ -240,23 +240,23 @@ footer p {
     filter: drop-shadow(4px 4px 10px rgb(220, 219, 220));
 }
 
-#restaurant:hover {
+.restaurant:hover {
     filter: drop-shadow(4px 4px 10px rgb(122, 121, 122));
 }
 
-#restaurant p, #restaurant h2, #restaurant a {
+.restaurant p, .restaurant h2, .restaurant a {
     background-color: rgb(255, 252, 252);
 }
 
-#restaurant p {
+.restaurant p {
     font-size: 20px;
 }
 
-#restaurant h2 {
+.restaurant h2 {
     margin: 0px;
 }
 
-#restaurant a:hover {
+.restaurant a:hover {
     text-decoration: underline;
 }
 
@@ -398,7 +398,7 @@ footer p {
     }
 
 
-    #cities {
+    .cities {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -406,7 +406,7 @@ footer p {
         margin: 0px 10px;
     }
 
-    #city {
+    .city {
         width: 250px;
     }
     /* styling for city pages */ 
@@ -422,27 +422,27 @@ footer p {
         margin: 30px auto;
     }
 
-    #restaurant {
+    .restaurant {
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    #restaurant a {
+    .restaurant a {
         padding: auto 25px;
     }
 
-    #activity img {
+    .activity img {
         width: 250px;
         height: 250px;
     }
 
-    #activities {
+    .activities {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    #activity {
+    .activity {
         max-width: 250px;
         margin: 50px 10px;
     }
@@ -503,7 +503,7 @@ footer p {
         margin: 40px auto;
     }
 
-    #cities {
+    .cities {
         justify-content: space-between;
     }
 }
