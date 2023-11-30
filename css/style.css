@@ -7,6 +7,22 @@
     left: 2%; /*change position when in focus (tabbed) view*/
 }
 
+/* latin-ext */
+@font-face {
+    font-family: 'Marcellus';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/marcellus/v13/wEO_EBrOk8hQLDvIAF81WPoK_kgXiYvO.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Marcellus';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/marcellus/v13/wEO_EBrOk8hQLDvIAF81VvoK_kgXiQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
 
 * {
     background-color: rgb(248, 239, 225);
@@ -66,6 +82,12 @@ h2 {
     margin: 25px 0px;
 }
 
+h3 {
+    background-color: white;
+    font-size: 24px;
+    color: rgb(84, 79, 79);
+}
+
 p {
     font-size: 18px;
     color: rgb(84, 79, 79);
@@ -98,8 +120,9 @@ hr {
 
 img{
     width: 300px;
-    max-height: 300px;
+    max-height: 600px;
     border-radius: 15px;
+    object-fit: cover;
 }
 
 
@@ -209,7 +232,7 @@ footer p {
     border-radius: 4px;
     flex-direction: column;
     margin: 25px 25px;
-    padding: 25px 50px;
+    padding: 10px 50px;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -266,14 +289,17 @@ footer p {
     margin: auto auto;
 }
 
-  /* Clear floats after the columns */
+.photo_gallery img {
+    height: 100px;
+    border-radius: 8px;
+}
+
 .photo_gallery:after {
     content: "";
     display: table;
     clear: both;
   }
   
-  /* The expanding image container */
   .container {
     position: relative;
     display: none;
@@ -281,7 +307,6 @@ footer p {
     height: auto;
   }
   
-  /* Expanding image text */
   #imgtext {
     position: absolute;
     bottom: 15px;
@@ -295,6 +320,10 @@ footer p {
     margin-right: 25px;
   }
 
+  #expandedImg {
+    width: 100%;
+    border-radius: 8px;
+  }
 
   /* Closable button inside the expanded image */
   .closebtn {
@@ -359,6 +388,7 @@ footer p {
     img{
         width: 250px;
         height: 250px;
+        object-fit: cover;
     }
 
     .about img{
@@ -382,12 +412,23 @@ footer p {
     /* styling for city pages */ 
 
     h2 {
-        margin: 25px 50px;
+        margin: 30px 50px;
+        font-size: 28px;
+    }
+
+
+
+    p {
+        margin: 30px auto;
     }
 
     #restaurant {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    #restaurant a {
+        padding: auto 25px;
     }
 
     #activity img {
@@ -410,6 +451,10 @@ footer p {
         margin: auto 40px;
     }
 
+    .photo_gallery img {
+        height: 200px;
+    }
+
     .closebtn {
         top: 15px;
         right: 75px;
@@ -424,8 +469,10 @@ footer p {
     #expandedImg {
         margin: auto 50px;
         width: 90%;
+        height: auto;
     }
 }
+
 
 
 
@@ -446,6 +493,14 @@ footer p {
     body {
         margin-left: 200px;
         margin-right: 200px;
+    }
+
+    h2 {
+        margin: 40px 50px;
+    }
+
+    p {
+        margin: 40px auto;
     }
 
     #cities {
